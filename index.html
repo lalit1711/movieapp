@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
@@ -13,9 +14,10 @@
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-<div class="topnav">
-    <div class="search-container">
+    <div class="topnav">
+        <div class="search-container">
 
             <select onchange="sel()" id="sort" style="">
                 <option>Sort By</option>
@@ -25,18 +27,19 @@
             </select>
             <input type="text" placeholder="Search.." name="search" id="searchkey">
             <button type="submit" onclick="showSearch()"><i class="fa fa-search"></i></button>
+        </div>
     </div>
-</div>
 
-    <div class="row" >
+    <div class="row">
         <nav class="col-sm-2">
             <ul>
-                <li class="active"><a href="#section1" style="text-decoration:none;"onclick="showCoun('country')">Country</a>
-                    </li>
+                <li class="active"><a href="#section1" style="text-decoration:none;"
+                        onclick="showCoun('country')">Country</a>
+                </li>
                 <div class="col-sm-10" id="country" style="display:none">
 
                 </div>
-                <li><a href="#section2" style="text-decoration:none;"onclick="showCoun('language')">Language</a>
+                <li><a href="#section2" style="text-decoration:none;" onclick="showCoun('language')">Language</a>
                     <div class="col-sm-9" id="language" style="display:none">
                         <p></p>
                     </div>
@@ -47,23 +50,29 @@
             <div class="row" id="winecard">
                 <div class="col-sm-4">
                     <div class="card">
-                        <img src="https://www.movieline.tv/wp-content/uploads/2017/12/kmcqlZGaSh20zpTbuoF0Cdn07dT.jpg" alt="John" style="width:100%;height:350px;">
+                        <img src="https://www.movieline.tv/wp-content/uploads/2017/12/kmcqlZGaSh20zpTbuoF0Cdn07dT.jpg"
+                            alt="John" style="width:100%;height:350px;">
 
-                        <p class="title"><span class="fa fa-heart" style="color:red;"></span> <font>81%</font>  &nbsp<font> Avatar (2009)</font></p>
-                        <br/>
+                        <p class="title"><span class="fa fa-heart" style="color:red;"></span>
+                            <font>81%</font> &nbsp<font> Avatar (2009)</font>
+                        </p>
+                        <br />
                         <div style="display: inline-block;">
-                        <p style="font-size:12px;    color: #999;font-family: Roboto,sans-serif;">avatar | future | marine | native | paraplegic</p>
+                            <p style="font-size:12px;    color: #999;font-family: Roboto,sans-serif;">avatar | future |
+                                marine | native | paraplegic</p>
                         </div>
-                        <br/>
+                        <br />
 
                     </div>
                 </div>
             </div>
             <center>
-                <button type="button" class="btn btn-primary" id="lm" style="width:20%" onclick="updateJSONFile()">Load more</button>
+                <button type="button" class="btn btn-primary" id="lm" style="width:20%" onclick="loadMore()">Load
+                    more</button>
             </center>
         </div>
     </div>
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>
